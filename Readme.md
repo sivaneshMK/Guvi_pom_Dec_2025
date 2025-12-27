@@ -15,3 +15,11 @@ now this login step used in all 1000 test cases
 username text box
 password text box
 it is used in all 1000 places 
+
+
+
+DataDriven
+---------------
+multiple set of datas to the test or a particular filed
+and have to validate the different outcomes
+pass +ve and -ve data --> and have validate the results

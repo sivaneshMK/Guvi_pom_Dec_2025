@@ -1,0 +1,9 @@
+url: https://www.youtube.com
+test_data_path: testdata\\test_data.csv
+
+db:
+  db_server:
+  connection_string:
+  username:
+  password:
+  port:

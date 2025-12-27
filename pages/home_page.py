@@ -25,6 +25,6 @@ class HomePage(BasePage):
         return  self.find_all_elements(locator=self.MENU_ITEMS, field="Menu Items")
 
     def click_menu(self, menu):
-        self.click(locator=(By.XPATH, "//tp-yt-paper-item[@role='link']//yt-formatted-string[contains(text(),'"+menu+"')]"), field=menu)
+        self.click(locator=(By.XPATH, "//a[@id='endpoint']/span[text()='"+menu+"']/parent::a"), field=menu)
 
     #read_xpath[user][name]
