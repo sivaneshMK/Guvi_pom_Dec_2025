@@ -12,7 +12,7 @@ def pytest_addoption(parser):
 
 testname = ""
 
-@pytest.mark.parametrize()
+
 @pytest.fixture(scope="function")
 def driver(env_config, test_name):
     # options = Options()
