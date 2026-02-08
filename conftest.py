@@ -15,11 +15,12 @@ testname = ""
 
 @pytest.fixture(scope="function")
 def driver(env_config, test_name):
-    # options = Options()
+    options =Options()
     # options.add_argument("--disable-notifications")
     # options.add_argument("--start-maximized")
     # options.add_experimental_option("detach", True)
-    driver = webdriver.Firefox()
+    options.add_argument("--headless=True")
+    driver = webdriver.Chrome(options)
     driver.get(env_config["url"])
     global testname
     testname = test_name
