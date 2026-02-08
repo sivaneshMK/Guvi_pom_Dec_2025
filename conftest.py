@@ -29,9 +29,10 @@ def driver(env_config, test_name):
 @pytest.fixture(scope="session")
 def env_config(request):
     env = request.config.getoption("--env")
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-
-    filepath = os.path.join(root,'config', f"{env}_env_config.yaml")
+    #root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    root = request.config.rootpath
+    filepath = root / "config" / f"{env}_env_config.yaml"
+    #filepath = os.path.join(root,'config', f"{env}_env_config.yaml")
     # path = os.path.join("config", f"{env}_env_config.yaml")
     # abpath = os.path.abspath(path)
     # print(abpath)
