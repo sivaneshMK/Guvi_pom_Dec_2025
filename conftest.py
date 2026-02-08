@@ -12,6 +12,7 @@ def pytest_addoption(parser):
 
 testname = ""
 
+@pytest.mark.parametrize()
 @pytest.fixture(scope="function")
 def driver(env_config, test_name):
     # options = Options()
@@ -29,7 +30,8 @@ def driver(env_config, test_name):
 def env_config(request):
     env = request.config.getoption("--env")
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    filepath = os.path.join(root, 'YouTube', 'config', f"{env}_env_config.yaml")
+
+    filepath = os.path.join(root,'config', f"{env}_env_config.yaml")
     # path = os.path.join("config", f"{env}_env_config.yaml")
     # abpath = os.path.abspath(path)
     # print(abpath)

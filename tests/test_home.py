@@ -43,3 +43,4 @@ def test_user(get_user_data):
     print(get_user_data["name"])
     print(get_user_data["email"])
     print(get_user_data["mobile"])
+
