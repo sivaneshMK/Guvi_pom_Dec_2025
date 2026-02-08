@@ -1,0 +1,2099 @@
+ISO --> 
+ISI --> 196
+ASCI -->
+IEEE -->
+
+What is Software
+------------------
+
+instruction
+program to reduce work
+combination program and data
+            Processor --> 8085 micro processor (Intel, silicon, snapdragon,media tech)
+01010101  ------------>     power
+software --> communicate with machine --->
+
+software mainly used to operate a machine
+we are passing instruction to the software by using basic language(communication language)(data)
+software will convert instruction in to binary --> OS --> processor convert binaries into electrical power --> hardware
+
+Why we are using software
+--------------------------
+save time and effort
+
+simplify the manual effort
+
+Types of software
+-----------------
+System software (firmware, os(windows, mac, android, ios, linux, simbion))
+application software(any software is running on top of os then it is called as application)
+Driver software --> (Display driver, audio drivers)
+Middleware --> application - application or application to os
+web applications --> 
+Hybrid applications
+
+Type of API's
+--------------
+Rest API 
+Soap API
+
+Type of SDLC Model
+--------------------
+Waterfall model
+V model
+prototype model
+iterative incremental model
+spiral model
+agile
+
+Waterfall model
+----------------
+Water fall model is very first model
+
+
+
+Testing Methodologies
+-------------------------
+
+White box testing
+--------------------
+glass box testing or transparent testing or unit testing
+
+White box testing is done by dev team
+
+path coverage,
+statement coverage
+cyclometric complexity
+Branch coverage
+
+once the dev completed the coding they will check the code is satisfying the requirement
+
+
+pytest,pyunit, junit, Nunit
+
+dev environment 
+test environment
+uat environment
+prod environment
+prod1 environment
+prod2 environment
+
+
+environments(dev, test, )
+
+
+def add(a, b){
+
+	return a+b
+}
+
+
+
+def test_add(){
+
+assert add(3, 4), 7
+
+}
+
+
+Black Box Testing
+------------------
+
+once white box testing is completed the dev will give working software to the testing
+now as a tester we have to perform black box testing
+
+bbt is also called as close box, opal testing
+
+
+as a tester we have to create test cases and will execute those cases on UI to check the business functions
+
+we dont have access for internal code
+
+black testing is done by testers
+
+Functional testing
+-------------------
+Smoke testing
+	Build --> version of working software
+	
+	smoke testing is to verify the build is capable to perform extensive testing
+that mean we have to check the application is satisfying the basic functionalities at least
+smoke testing is also called as build verification testing.
+
+
+There is not test cases for smoke testing
+
+Why
+------
+
+1000 
+
+Basic flow
+	
+
+sanity testing
+
+	dont have time to perform detailed regression we have to go for sanity
+verify the basic flow and as well as have check the related components.
+
+regression testing
+
+Regression testing--> 
+
+	Previous build executed 1000 
+	900 --> passed
+	100 --> failed --> reported --> dev --> fix --> develop and integrate any other new features
+	
+	execute passed cases in the new build
+
+
+
+retesting
+
+	execute failed test cases on the new version of the software 
+
+integration testing
+	
+	Incremental integration testing
+		topdown  --> stubs
+		bottom up --> drivers
+		Sandwich --> hybrid --> combination of both topdown and bottom up
+
+	 		
+	the app will get stable in quicker way
+	less chance for application failure
+	will archive test coverage.
+	
+
+
+	Non incremental integration testing(BigBang)
+	
+		
+
+
+	
+
+e2e testing
+
+once all the modules are integrated and the application completly ready we can go for e2e integration testing
+will check all the features to gather as a single system.
+
+localization testing
+
+
+
+globalization testing
+Adhoc testing --> Pair testing, buddy testing, Monkey testing  -->
+
+Pair testing
+-------------
+
+sr tester 
+jn tester 
+
+
+buddy testing
+--------------
+tester 
+dev
+
+
+
+Gorilla testing
+Exploratory testing
+
+
+
+User acceptance testing
+
+
+Nonfunctional testing
+----------------------
+Performance testing
+----------------------
+
+	load testing
+		
+		load --> number of users
+		
+
+		10cr
+	at a time the max number users hitting the application 
+	
+	we have to make sure, the behaviour of an application is as expected
+	
+	
+	jmeeter, astra load, load ninja, load runner
+	
+		
+	stress testing(Spick testing)		
+
+	volume testing
+
+		
+
+
+	Endurance testing
+
+
+
+
+security testing
+
+	sql injections
+
+	pen testing
+
+
+usability testing
+
+
+Gray box testing
+------------------
+
+graybox --> black box + whitebox
+
+is performed by dev or tester who are having programming knowledge
+we dont have full access for code but will have full access for ui
+
+
+API testing 
+Database Testing
+
+
+
+Boundary value analysis
+Equivalence class portioning 
+
+
+
+Lb - ub
+18-100 
+<18
+
+
+n- boundary
+
+
+
+n-1 n n+1
+
+
+17   18   19     99  100    101
+
+Equivalence class portioning
+group the similar value
+
+and fetch the any one value from the group or fetch any value between the range
+
+17   19   101
+
+-------------------
+13   30   105
+------------------
+
+
+
+
+91-100 --> S Grade     
+81-90 --> A Grade
+71-80 --> B Grade
+61-70 --> C Grade
+51-60 --> D Grade
+45 -50 --> E Grade
+0- 44 --> U Grade
+
+
+Boundary value analysis
+and equivalence class partitioning 
+
+
+
+
+
+
+Test case design technique
+
+1. Negative testing
+2. Boundary value analysis
+3. equivalence class partitioning
+4. Error guessing
+5. State transition table
+6. cause and effect diagram
+7. Decision table
+
+
+
+
+
+if (mark>=0 and mark >= 44)
+
+	PRINT(uGRADE)
+
+IF MARK>91  AND MARK <=100
+
+ELSE IF MARK>=81 AND MARK <=90
+
+                         bVa                       ECp
+
+91-100 --> S Grade    90 91 92 99 100 101 -->  90  96  101--->   96  91   --->  96
+81-90 --> A Grade     80 81 82 89 90  91  -->  80  84  91        84  81 90 -->  84
+71-80 --> B Grade     70 71 72 79 80  81  -->  70  76  81        80  71 76 -->  76
+61-70 --> C Grade     60 61 62 69 70  71  -->  60  63  71        70  61 63 --> 63
+51-60 --> D Grade     50 51 52 59 60  61  -->  50  58  61        60  58 51 --> 58
+45 -50 --> E Grade    44 45 46 49 50  51  -->  44  47  51        50  47 45 --> 47
+0- 44 --> U Grade     -1  0  1 43 44  45  -->  -5  23  45        44  23    --> 23  -5  105
+
+
+ 
+AGE FIELD --> 400 --> TODDLER
+	      180 --> INFANT
+
+
+1 DAY - 6MONTH --> INFANT
+>6MONTH - 2YERS --> TODDLER
+>2YERS - 4 YEARS --> CHILD
+>4YERS - 12 YERS --> KID
+>12 YERS -19 YERS --> TEEN
+>19 YERS - 59 YERS --> ADULT
+>59 YERS --> OLD
+
+
+when Boundary(BVA)
+
+if you think the error will be present in the boundary 
+if the fields are defined with boundary 1- 10, 18 -100
+if you want to cover edge cases
+
+ECP
+-----
+
+if you think values range is huge and reduce the number of test cases 
+but we are arch test coverages
+
+
+
+
+Negative testing
+------------------
+1 positive test should have atleast one negative
+
+
+
+Error Guessing:
+--------------
+
+State transitions diagram
+---------------------------
+
+Cause and effect diagram
+------------------------------
+
+
+
+
+Software testing life cycle
+-------------------------------
+
+stlc is part of sdlc
+
+
+Define the scope of testing
+Develop a test strategy
+The test strategy defines how you plan to implement testing. Your testers should all be working off the same game plan, so make sure every member of the team is aware of what they're supposed to be doing at any given time.
+Define the test objective
+Choose testing tools
+Find bugs early
+Define your test criteria
+Entry criteria
+----------------
+Test Basis --> availability of testable(req, user stories, specification)
+Test Objective --> component or system available and stable
+Test Environment --> hardware and software and tools are setup and ready
+Test Data --> sufficient test data available for test
+Resources --> Availability of testers
+Approved test plan 
+
+
+
+Exit criteria
+-------------
+Test Completion -->  % of test cases have to be executed atleast once
+Defect Resolution --> There is not critical or high priority issues are in the system every thing have to be fixed
+
+Quality Metrics: have to archive % of test coverage(all the features and components are tested)
+
+Stackholder approval: reviewed and approved the test results
+Resource availability: Resources required for the next stage are available
+ 
+Resource planning--> testers availability and allocating the tests
+
+Plan your test environment--> Hard ware , software, tools have to be setup for test execution 
+
+Plan test team logistics --> hardware logistics
+Schedule & estimation --> duration and cost estimation
+Test deliverables --> outcome of the test
+Test automation ---> what have to be automated and executed
+
+
+Error
+------
+Executing the code and finding some issue in that then it is called as error
+when we are performing unit testing if we facing any issues it will be called as error
+
+dev terminology
+
+Bug
+-----
+testers terminology
+when the error is not found in the unit test and it is observed in the testing environment by the tester is called as bug
+
+
+Defect
+-------
+If users are facing issues in the prod environment then it is called as defect
+issue due to error in the code.
+
+Failure:
+---------
+
+if end user is finding there is a function is implemented in wrong way or gap in the requirement
+
+or the application is not meeting the requirement
+
+
+fault:
+-------
+
+if any function is not working(blocker, ship stopper) in the production environment it is called as fault.
+
+
+Bug life cycle
+---------------
+Bug Life Cycle
+In software development process, the bug has a life cycle. The bug should go through the life cycle to be closed A specific life cycle ensures that the process is standardized The bug attains different states in the life cycle The life cycle of the bug can be shown diagrammatically as follows
+
+New:
+When a bug is found/revealed for the first time, the software tester communicates it to his/her team leader (Test Lead) in order to confirm if that is a valid bog. After getting confirmation from the Test Lead, the software tester logs the bug and the status of New is assigned to the bug
+
+Assigned
+After the bug is reported as New it comes to the Development Team. The development Lead verifies if the bug is valid. If the Bug is valid, development leader assign it to developer to fix it and a status of 'Assigned is assigned to it
+
+InProgress:
+Once the developer starts working on the bug. he/she changes the status of the bug to InProgress to indicate that he/she is working on it to find a solution.
+
+Open:
+Once development lead is verified the bug but it not assigned to any of the developers to fix, because of developers may be busy with other bug or task, that time the bug is moved to the open status. Once the developer get free he will assign the bug to his/her name and changing the status to inprogress.
+
+Fixed
+Once the developer makes necessary changes in the code and verifies the code, he/she marks the bug as Fixed and passes it over to the Development Lead in order to pass it to the testing team.
+
+Retest:
+The testing team leader changes the status of the bug, which is previously marked with fixed to 'Retest' and assigns it to a tester for retesting
+
+Closed:
+After the bug is assigned a status of 'Retest, it is again tested. If the problem is solved. the tester closes it and marks it with 'Closed' Status.
+
+Reopen:
+If after retesting the software for the bug opened, if the system behaves in the same way or same bug arises once again, then the tester reopens the bug and again sends it back to the developer marking its status as 'Reopen’.
+
+Rejected:
+If the Testing Lead finds that the system is working according to the specification on the bug is invalid as per the explanation from the development, he/she add the  log and marks in status as Rejected.
+
+Postponed
+Sometimes, testing of a particular bug has to be postponed for an indefinite period. This station may occur because of many reasons, such as unavailability of Test data, unavailability of particular functionality etc. That time, the bug is marked with Postponed status.
+
+Deferred:
+In some cases a particular bug stands no importance and needs to be avoided that time it is marked with Deferred status.
+
+
+
+
+Agile Methodology
+------------------
+
+Agile methodology is combination of waterfall model, iterative incremental model, prototype
+
+Agile implemented by
+---------------------
+Scrum --> Product development
+Kanban --> Product is in maintenance
+
+Scrum
+-------
+application development in to phases --> Milestone (Requirement and time duration)
+
+Sprint -->(1 day, 2 day, 3day, 1 week, 2week, 1month, 2month 3month)
+Sprint goal --> what have to be completed
+Requirements are maintained in the Backlog(Sprint backlog, product backlog)
+Epic is to group the user stories or module
+Requirements are converted to a user stories
+user stories spliced into task
+task can be sliced to subtask
+
+
+how to create user story
+-------------------------
+Description
+Objective 
+Acceptance criteria
+user story point(1, 2, 3,4, 8, 12)--> points are used to measure the effort and time taken to complete
+
+1MD - 1sp
+
+1 complexity
+2. duration
+3. uncertainty
+
+Scrum Team
+----------
+
+Product owner --> POC for req
+Scrum Master --> he need to implement scrum process and maintain
+Dev
+Tester
+Devops or SRE
+
+
+Sprint ceremonies 
+-----------------
+Sprint planning --> Formal meeting, scrum team will be present duration is 1-2hr
+			plan and assign userstories for this sprint 
+			picking the user stories based on capacity 
+			
+			1sprint howmuch story point have to be completed by 1 scrum member
+			
+			capacity = number of person * number of sp/person
+			defining sprint goal
+Daily standup --> formal or informal meeting
+			they will discus about what i have done yesterday, what is the plan for today if they have any blockers or any issue
+
+
+Sprint Refinement- Formal meeting - user stories:  Discussion about the requiremen
+------------------
+
+Sprint Review --> Review of work
+
+Sprint Retrospective --> What when well, what don't
+
+Sprint closure --> They will move the tickets to done if completed or the will carryforward the ticket to next sprint if not completed
+		They can check for borndown chart
+
+
+
+
+FACEBOOK
+-----------
+1. as a user i have to register to the system
+2. as a user i have to login the application
+3. as a user i have to reset my password
+4. as a user i have to post video, image, text
+5. as a user i have to i can post like for the post
+6. as a user i can able to add friends to the list
+
+
+Git
+-------
+Distributed Version control System
+
+Keep track of changes in your code or file
+work on multiple versions of project simultaneously
+collaborate with team without overwriting each other work
+go back in time to any previous version if something goes wrong
+
+Git --> Application it is installed in the system/os
+GitHub --> web based git application
+
+
+Setup Git and GitHub
+----------------------
+Create Account https://github.com/
+
+Login to the GitHub
+
+
+Repository
+--------------
+Place to maintain our project(look like a folder)
+
+
+Steps to create Repository
+--------------------------
+Click new to create repo
+Enter repo name -->GuviAutomationAug
+
+On the Readme file
+select the public repo
+click on create
+
+download git exe from the git scm website https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.1/Git-2.51.0-64-bit.exe
+
+Install the exe  --> Next buttons until it is getting installed
+
+
+Clone the repository
+---------------------
+
+
+1. copy the git repository url --> https://github.com/sivaneshMK/GuviAutomationAug.git
+
+2. open folder where you have to keep the files in your local storage
+3. Open Cmd in the folder
+
+
+
+
+Git comments
+
+
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sivan\OneDrive\Documents\Temp>git clone https://github.com/sivaneshMK/GuviAutomationAug.git
+Cloning into 'GuviAutomationAug'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+C:\Users\sivan\OneDrive\Documents\Temp>git config --global user.name "SivaneshMK"
+
+C:\Users\sivan\OneDrive\Documents\Temp>git config --global user.email "sivaneshmk@gmail.com"
+
+C:\Users\sivan\OneDrive\Documents\Temp>cd GuviAutomationAug
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TextDocument.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git checkout -b guvi
+Switched to a new branch 'guvi'
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git branch -a
+* guvi
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch guvi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TextDocument.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git add .
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch guvi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TextDocument.txt
+
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git commit -m "added text file"
+[guvi 7da15c2] added text file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TextDocument.txt
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git push origin guvi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'guvi' on GitHub by visiting:
+remote:      https://github.com/sivaneshMK/GuviAutomationAug/pull/new/guvi
+remote:
+To https://github.com/sivaneshMK/GuviAutomationAug.git
+ * [new branch]      guvi -> guvi
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git branch -a
+* guvi
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/guvi
+  remotes/origin/master
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git checout master
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 893 bytes | 297.00 KiB/s, done.
+From https://github.com/sivaneshMK/GuviAutomationAug
+   795dc08..f5ad5b1  master     -> origin/master
+Updating 795dc08..f5ad5b1
+Fast-forward
+ TextDocument.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TextDocument.txt
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git checkout -b "abc"
+Switched to a new branch 'abc'
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch abc
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   TextDocument.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git diff TextDocument.txt
+diff --git a/TextDocument.txt b/TextDocument.txt
+index 4296b30..10399c3 100644
+--- a/TextDocument.txt
++++ b/TextDocument.txt
+@@ -1 +1,3 @@
+-Abcdefghijklmnopqrstuvwxyz
+\ No newline at end of file
++Abcdefghijklmn
++
++12356789083863873678737837833
+\ No newline at end of file
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git add .
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch abc
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   TextDocument.txt
+
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git commit -m "Edit Text file"
+[abc f33e213] Edit Text file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git push origin abc
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'abc' on GitHub by visiting:
+remote:      https://github.com/sivaneshMK/GuviAutomationAug/pull/new/abc
+remote:
+To https://github.com/sivaneshMK/GuviAutomationAug.git
+ * [new branch]      abc -> abc
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch abc
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git add .
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git status
+On branch abc
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git commit -m "added text file"
+[abc 5b2b825] added text file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\sivan\OneDrive\Documents\Temp\GuviAutomationAug>git push origin abc
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sivaneshMK/GuviAutomationAug.git
+   f33e213..5b2b825  abc -> abc
+
+
+Where we are using python
+----------------------------
+Webapplication development ---> Django, flask
+Native application development --> 
+Drivers, Middleware, firmware development
+ML, AI, Datascience
+Automation
+cloud computing
+
+Reason 
+--------
+Architechture --> Interpreted language, Dynamic language, OOPS, Scripting, 
+less number of lines to create program because its not following the syntax or systematic language
+python is case sensitive, python can be integrated with other tools like DB tools
+
+Architecture 
+--------------
+
+
+
+
+Interpreter
+------------
+interpreter is a set of program which is involved to compile the program
+
+interpreter will compile the program line by line so it is reducing the compilation time
+
+Steps of interpreter
+---------------------
+1 source code--> have to create program and store in .py format
+2. Tokenizer ---> interpreter read the source code and convert the program into smaller tokens 
+token means smaller elements
+3. Parser --> grammar checkers --> It will collect syntax tree and check the syntax of program or grammar
+4.compiler --> convert source code in to bite code
+5. PVM --> python virtual machine --> this will covert byte code in to machine specific code and it will pass the machine code to the system
+
+
+Print in python
+--------------
+
+print(object, sep = " ", end ="\n")
+
+\n move the cursor to next line
+sep is between the objects
+
+
+Data Type
+-----------
+
+Numeric
+
+	int 
+	float
+	complex
+
+
+Sequence Type
+
+	List
+	Tuple
+	String
+
+Set
+	
+Dictionary
+Boolean
+
+
+
+Steps to Configure python project and git repository
+-------------------------------------------------------
+Create New Repo in git with out readme.md file(the repo should be empty)
+create python project in PyCharm
+create any file in python project
+open terminal in PyCharm
+initiate git --> git init
+connect to the remote repo ---> git remote add origin https://github.com/sivaneshMK/PythonProjectGuviOct.git
+to check the connectivity --> git remote -v
+stage your changes --> git add .
+move your changes to the local repo git commit -m "initial commit"
+move your changes to the remote repo --> git push -u origin master
+refresh your remote repo your file will be added to your repo master branch
+
+
+git status --> current status of your file
+
+
+MySQL
+-----
+
+Data types in MySQL
+---------------------
+Numeric:
+Int, Tinyint(1byte), smallint, Mediumint, Bigint, float, double, 
+
+String
+----------------
+char
+varachar
+text
+medium text
+long text
+Enum --> one value from the predefined list
+set --> you can pick multiple values from predefined list
+
+Date and time 
+--------------
+Date
+time
+Datetime
+Timestamp
+Year
+
+
+
+create table std_details
+(
+std_id int,
+std_name varchar(50),
+std_email varchar(255),
+std_mobile bigint
+)
+
+
+insert column
+---------------
+Alter table std_details
+Add age int;
+
+
+change details of clm
+----------------------
+alter table std_details
+modify age float;
+
+drop particular column
+--------------------------
+alter table std_details drop column std_email;
+
+rename the table
+-----------------------
+alter table std_details rename to student_details;
+
+
+Insert data into a table
+
+insert into student_details
+values
+(1001, 'Karthic', 09876531987, 55);
+
+
+insert into student_details
+values
+(1002, 'Boobalan', 09876531983, 44),
+(1003, 'Jainprasila', 8938938939, 33);
+
+
+
+create table student_mark
+(
+std_id int,
+std_mark int,
+std_rank int
+);
+
+
+select * from student_details;
+
+select std_name from student_details;
+
+select std_name, age from student_details;
+
+select * from student_details
+where std_name = 'Jainprasila';
+
+select * from student_details
+where std_name;
+
+
+select * from student_details
+where std_name like 'Vidhya %';
+
+select * from student_details
+where std_name like 'Vidhya %' and age=13;
+
+select * from student_details
+where age >=18;
+
+select * from student_details
+where age<18;
+
+select max(age) from student_details;
+
+-- select (3) from student_details;
+
+
+
+
+RDBMS
+-------
+Keys
+----
+Primary Key  ---> if your defining primary key for the particular column in a table 
+	it wont be allow you to store duplicate datas
+	it wont allow the null
+	address of the record
+	it should be the unique value
+
+Foreign Key --> foreign key should be primary key in parent table
+
+
+
+Unique Key
+composite key
+
+
+
+Example for RDBMS Table creation
+------------------------------------
+
+
+create table std_details
+(
+std_id int primary Key,
+std_name varchar(50),
+std_email varchar(255),
+std_mobile bigint
+);
+
+create table subject
+(
+sub_id int primary Key,
+sub_name varchar(50));
+
+create table std_subject
+(std_sub_id int primary key,
+std_id int,
+sub_id int,
+foreign key (std_id) references std_details(std_id),
+foreign key (sub_id) references subject(sub_id));
+
+
+create table std_mark
+(std_mark_id int primary key,
+std_sub_id int,
+std_sub_mark int,
+foreign key (std_sub_id) references std_subject(std_sub_id)
+);
+
+
+insert into subject
+values
+(1, 'Tamil'),
+(2, 'English'),
+(3, 'Maths'),
+(4, 'Science'),
+(5, 'history'),
+(6, 'Computer science'),
+(7, 'EVS');
+
+
+insert into std_subject
+values
+(1, 1001, 1),
+(2, 1001, 2),
+(3, 1001, 3),
+(4, 1001, 4),
+(5, 1001, 5),
+(6, 1002, 1),
+(7, 1002, 2),
+(8, 1002, 3),
+(9, 1002, 4),
+(10, 1002, 5),
+(11, 1002, 7),
+(12, 1004, 1),
+(13, 1004, 2),
+(14, 1004, 3),
+(15, 1004, 4),
+(16, 1004, 5),
+(17, 1004, 6);
+
+select * from std_subject;
+
+insert into std_mark
+values
+(1, 1, 88),
+(2, 2, 74),
+(3, 3, 78),
+(4, 4, 89),
+(5, 5, 87),
+(6, 6, 90),
+(7, 7, 55),
+(8, 8, 87),
+(9, 9, 90),
+(10, 10, 75),
+(11, 11, 99),
+(12, 12, 76),
+(13, 13, 87),
+(14, 14, 89),
+(15, 15, 87),
+(16, 16, 65),
+(17, 17, 84);
+
+select * from std_mark;
+
+select * from std_subject;
+
+select * from subject;
+
+
+
+Joins
+-------
+used to get data from multiple related tables
+
+types
+----------
+Inner join
+	returns records with matching values in both tables
+
+left join
+	returns all records from the left table and matched records from the right table.
+if no matches return null
+	
+right join:
+	Returns all records from the right table and matched records from the left table
+	
+full outer join
+
+
+create table employees
+(emp_id int Auto_increment Primary Key,
+emp_name varchar(255),
+emp_mobile bigint unique,
+emp_dept_id int,
+foreign key (emp_dept_id) references
+department(dept_id)
+
+
+);
+
+create table department
+(
+dept_id int primary key,
+dept_name varchar(25) unique
+);
+
+
+insert into department
+values
+(1, 'HR'),
+(2, 'Finance'),
+(3, 'RND'),
+(4, 'BA'),
+(5, 'QA'),
+(6, 'DEV');
+
+insert into employees
+values
+(1, 'Ashika', 897397839873, 1),
+(2, 'Vidhya S', 8738793879, 5),
+(3, 'Prasila', 8939889373, 6);
+
+
+insert into employees
+(emp_name, emp_mobile)values
+('Sujatha', 8973978789);
+
+insert into employees
+(emp_name, emp_mobile, emp_dept_id)values
+('Thavamani', 89739733, 1);
+
+insert into employees
+(emp_name, emp_mobile, emp_dept_id)values
+('Varshni', 897397338383, 4);
+select * from employees;
+
+select * from department;
+
+select e.emp_name, d.dept_name from employees e
+inner join department d ON e.emp_dept_id = d.dept_id;
+
+select e.emp_name, e.emp_mobile, d.dept_name from employees e
+left join department d ON e.emp_dept_id = d.dept_id;
+
+
+select e.emp_name, e.emp_mobile, d.dept_name from employees e
+right join department d ON e.emp_dept_id = d.dept_id;
+
+
+-- Fullouter join
+select e.emp_name, e.emp_mobile, d.dept_name from employees e
+right join department d ON e.emp_dept_id = d.dept_id
+Union
+select e.emp_name, e.emp_mobile, d.dept_name from employees e
+left join department d ON e.emp_dept_id = d.dept_id;
+
+
+
+select
+	s.std_name, sub.sub_name, m.std_sub_mark
+from std_details s
+join std_subject ss
+	on s.std_id= ss.std_id
+join subject sub
+	on ss.sub_id = sub.sub_id
+JOIn std_mark m
+	on ss.std_sub_Id = m.std_sub_id
+order By s.std_name, sub.sub_name;
+
+
+-- check for std_mark 
+-- entries that dont have matching std_subject entries
+
+select m.std_sub_id from std_mark m
+left join std_subject ss on m.std_sub_id
+where ss.std_sub_id Is NUll;
+
+select s.std_id, s.std_name, ss.sub_id
+from std_details s
+join std_subject ss on s.std_id = ss.std_id;
+
+
+select ss.std_sub_id, ss.std_id, m.std_sub_mark
+from std_subject ss
+join std_mark m on ss.std_sub_id = m.std_sub_id;
+
+
+difference between where and having
+
+where
+------
+filter rows before group
+normally it is executed first
+
+Having
+filters groups after grouping
+used with aggregate functions(sum avg, count, )
+executed after the groupby
+
+
+
+-- check for std_mark 
+-- entries that dont have matching std_subject entries
+
+select m.std_sub_id from std_mark m
+left join std_subject ss on m.std_sub_id
+where ss.std_sub_id Is NUll;
+
+select s.std_id, s.std_name, ss.sub_id
+from std_details s
+join std_subject ss on s.std_id = ss.std_id;
+
+
+select ss.std_sub_id, ss.std_id, m.std_sub_mark
+from std_subject ss
+join std_mark m on ss.std_sub_id = m.std_sub_id;
+
+# get all students total mark
+select
+	s.std_name as Student_name, sum(m.std_sub_mark) As total_mark
+from std_details s
+join std_subject ss
+	on s.std_id= ss.std_id
+JOIn std_mark m
+	on ss.std_sub_Id = m.std_sub_id
+group by s.std_name;
+
+
+Alter table employees Add 
+emp_salary int;
+
+update employees
+set emp_salary = 44000
+where emp_id = 7;
+
+select * from employees
+order by emp_salary desc
+
+
+select * from employees
+
+-- groups rows that have the same values in to summary rows
+
+select emp_dept_id, count(*) as employee_count from employees
+
+group by emp_dept_id;
+
+select emp_salary, count(*) as emplyee_count from employees
+group by emp_salary;
+
+
+select * from employees
+where emp_salary between 50000 and 100000;
+
+
+-- get deparment which having 2 or more employees
+select emp_dept_id, count(*) as employee_count
+from employees
+group by emp_dept_id
+having count(*) >= 2;
+
+
+select emp_name, emp_salary
+from employees
+where emp_salary IN (
+(Select Max(emp_salary) from employees),
+(Select Min(emp_salary) from employees)
+	
+);
+
+
+-- who is working with ashika
+
+
+select emp_name, emp_dept_id
+from employees
+where emp_dept_id IN(
+select emp_dept_id from employees
+where emp_name = "Ashika"
+);
+
+
+
+Rajini --> all the movies
+
+Horror --> all the movies with same genner
+
+
+
+
+
+
+
+-- Create a view for each student total and average mark
+create view vw_student_total_avg_mark as
+select
+	s.std_name as studen_name,
+    sum(m.std_sub_mark) as total_mark,
+    round(avg(m.std_sub_mark), 2) as average_mark,
+    count(m.std_sub_mark) as subject_count
+from std_details s
+join std_subject ss on s.std_id = ss.std_id
+join std_mark m on ss.std_sub_id = m.std_sub_id
+group by s.std_name
+
+
+
+-- Transactions-->
+-- A transaction is a set of sql operations(queries ) that are
+-- executed as single unit.
+-- the main goal is to ensure data consistancy and reliability --> either
+-- all statements succeed or none of them take effect
+
+/*
+transaction 
+Syntax
+
+start transaction;
+
+your SQL statements
+example:
+update 
+insert
+delete
+
+commit--> save changes
+rollback --> to undo if something goes wrong
+
+
+
+*/
+-- bank money transfer
+
+create table account(
+acc_id int primary key,
+acc_name varchar(50),
+balance decimal(10, 2)
+);
+
+
+insert into account values
+(1, 'prince', 100000.00),
+(2, 'Sidharth', 1000000.01);
+
+
+/*
+sidharth trans 1000RS - Prince
+
+
+
+*/
+
+
+start transaction;
+update account set balance = balance-1000 where acc_id =2;
+update account set balance = balance+1000 where acc_id=1;
+commit;
+
+
+start transaction;
+update account set balance = balance-1000 where acc_id =2;
+update account set balance = balance+1000 where acc_id=4;
+rollback;
+
+select * from account;
+
+Delimiter $$
+
+Create procedure transfer_amount(IN from_acc INT, IN to_acc INT, IN amount decimal(10, 2))
+begin
+	declare SENDER_BALANCE DECIMAL(10,2);
+	
+    start transaction;
+	select balance into SENDER_BALANCE from account where acc_id=from_acc;
+	IF sender_balance >=amount Then
+		update account set balance = balance-amount where acc_id =from_acc;
+		update account set balance = balance+amount where acc_id=to_acc;
+		commit;
+        select 'Transaction is successfull' AS message;
+	else
+		rollback;
+        Select 'Insufficient balance' As message;
+	end if;
+END$$
+
+call transfer_amount(1, 2, 2000);
+
+
+/*
+
+The procedure is like a function witout a ruturn type 
+used to perform a specific operations-- such as inserting, updating
+deleting or processing data in reusable way
+
+you can make proccess logics using if, loop, transaction 
+
+
+*/
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+							Selenium
+
+
+Automation Testing:
+-------------------
+Converting manual test cases in to automation test script by using any of the tools like selenium, Appium, uft, rft, ect.
+and executed on the system with out manual intervention.
+
+Why
+----
+Reduce human errors
+reduce dev cost
+increase efficiency of testing
+reduce time and effort
+identify the critical functional errors
+to identify the issues in behaviour
+
+When
+--------
+once the application is ready for test, we can execute the automation test
+
+When you will consider the application for automation?
+-------------------------------------------------------
+when the application or module is functionally stable
+The module or function shouldn't have any critical issues
+The test environment is reliable and consistent.
+
+
+What are the testing tools are in market
+-----------------------------------------
+selenium, applium, playwright, uft, rft, test complete, tosca, SoapUI, katalon studio, renorex ect
+
+
+Why selenium
+--------------
+open source
+cross browser testing(chrome, edge, firefox, IE, opera, safari)
+multiple programming languages(java, python, ruby, C#, javascript, PHP, pearl)
+platform supports
+supports CICD(Jenkins, concourse ect.)
+strong community base.
+frequently we are getting updated versions to support latest browsers and programming languages
+
+Disadvantages of selenium
+--------------------------
+its not supporting the Windowbased application for automation
+can't automate captcha
+there is no in build reporting
+IT is not following any of the development approaches like tDD or BDD
+it is not capable for video recording
+
+
+
+History of Selenium
+-------------------
+2004 - by  Jason Huggins
+official web site -- https://www.selenium.dev/history/
+
+first release --> selenium core
+second release --> selenium IDE(record and play back)
+third release --> selenium RC(Remote control)
+fourth release --> webdriver
+
+selenium  2 --> selenium webdriver 
+
+selenium web driver is a combination of webdriver and RC
+
+selenium 3
+
+selenium 4
+
+Selenium components
+------------------
+selenium core, IDE, RC, WebDriver, Grid
+
+
+
+Components of selenium 4
+-------------------------
+Selenium WebDriver -->It controls browsers through drivers using w3c protocol
+Selenium grid  --> manages distributed execution(local/remote) using modern architecture
+selenium IDE --> record- and - play back tool for quick script generation
+selenium manager --> automatically manages browser drivers(no need to download browser drivers manually)
+
+Features in selenium 4
+-------------------------
+relative locators --> Find Elements near other elements(above(), below(). near())
+Better window and tab handling --> easy to switch between tabs and windows
+full page screenshots --> supports all browsers
+dev tools protocol integrations --> interacts with chrome dev tools(networks, console logs, performance)
+Selenium grid 4 --> uses microservices architecture(Hub+node +router +distributor)
+
+
+Why we are using python
+--------------------------
+
+Easy programming
+huge library support
+we have different frameworks to develop the automation script and run(pytest, pytestbdd, robot, pyunit)
+it will support the 3 party reports aswell(allure report, extent report, pytest html report)
+community support.
+
+
+framework
+-----------
+it is a organized way of programming(maintain the folder structures)
+rules and regulations(to create a program)
+it will help you to reduce duplicate programs or it will increase the reusablility of program
+easy maintance, clear way of program.
+
+
+java(3 years), python(4.5), c#, ruby, go lang
+
+
+
+Selenium Locators
+----------------------
+Id
+Name
+classname
+CSSSelector
+Xpath
+LinkText
+PartialLinkText
+Tagname
+
+
+
+<input> --> input tag
+</input> --> closed tag
+name = "" --> attribute(property name = property value)
+class=""
+in between open and closed tag--> text
+
+Compound class name
+---------------------
+compound classname is not permitted by the class name locator
+
+compound classname means, if any space present inside the class attribute value
+
+
+Pytest 
+----------
+framework
+it is supports TDD ---> TEst Driven Development
+it is have a inbuild report
+and also supports 3rd party reports
+
+
+
+pytest should have a test file and the file name should be start with or end with  test_* or *_test
+
+same have to be followed for test methods
+
+pip install -r requirements.txt
+
+
+A virtual environment is an isolated workspace where you can install python
+packages separately for each project
+
+this avoids version conflicts like:
+	project A need selenium 3.41.5
+	project B need selenium 4.5
+
+
+
+Create Virtual environment
+	python -m venv myenv           
+
+myenv --> is user defined name for virtual environment
+
+Activate Virtual Environmen
+	myenv\Scripts\activate
+
+
+Alerts:
+-----------
+Alert are also known as JS popup
+when we are getting this alerts it has to be handled
+if your not handling this in runtime. it will block the other element interactions
+
+
+File UPload
+-------------
+
+
+WebElement Methods
+-------------------
+send_keys
+click
+clear
+is_selected
+	check or radio
+is_displayed
+is_enabled
+get_attribute
+text
+
+<html>
+	<ul>
+ 		<li>
+		<li>
+
+WebDriver Method
+------------------
+get
+current_url
+title
+find_element
+find_elements
+back
+forward
+refresh
+switchTo
+
+
+
+
+
+
+Assignment
+--------------
+Check Flight is selected
+One Way Radio button is Selected(if Not selected raise exception and make test fail)
+Select From City  and to city Dynamically(in run time get from city and to city from user)
+from city and to city both are same you have throw error
+
+Depature date(dynamic select based on user input)
+
+check regular is default(raise error if not)
+
+click search
+
+check flight list, if nothing raise an error
+
+Check flights are listed based on the price(low to high)
+
+Check listed flight are unique based on flight number
+Check selected is highlighted in the flight list page
+select view price for the first flight
+
+trip fare popup card should have the same details which we given(from , to , date, flight code and name, depature and arrival time)
+select book now
+Validate price details based on fare selection, from , to , date, flight code and name, depature and arrival time
+follow the other steps and make ticked booked
+
+
+
+
+Demo Cache
+turn on safe browsing
+
+
+
+"test_name	step_no	keyword	locator	value"	
+"test_user_can_search_product	1	open_browser		"	
+"test_user_can_search_product	2	launch_url		https://www.flipkart.com/"	
+"test_user_can_search_product	3	enter_text	//input[@name='q']	cow dung cake"	
+"test_user_can_search_product	4	click	(//form[@action='/search']//a//span[text()='cow dung cake'])[1]	"	
+"test_user_can_search_product	5	verify_text	""//span[contains(text(),'Showing')]/span""	cow dung cake"
+
+
+
+Playwright
+--------------
+
+Playwright is a automation framework
+
+Built by Microsoft
+
+open source test automation library
+
+it will support , java python, c#, Nodejs(javascript/typescript)
+
+First release --> January 2020
+
+Features
+-----------
+
+Cross-browser Testing --> Chrome, firefox, edge, webKit
+
+Multi Language support
+
+Auto Waiting --> waits automatically for elements to be ready
+
+Headless and Headed Mode
+
+Mobile and device emulation --> can emulate devices, screen sizes and geolocations
+
+network interception and mocking --> support the interception of api calls and mocks responses for improved test control
+
+Built in test generator --> record actions to auto generate code for test scripts
+
+Visual and screenshot testing --> full screen screenshot, element snap, video recordings
+
+inbuild reports
+
+Limitations of playwright
+--------------------------
+it wont support Native Mobile apps
+
+
+Setup playwright
+-----------------
+python project
+install playwright, pytest
+playwright install
+
+locators
+--------------
+get_by_role() --> best practice
+get_by_test_id()
+get_by_label()
+get_by_text()
+locator()     --> xpath and CSS
+
+
+
+BDD --> Behavior driven development   - TDD  --> Test Driven Development
+----------------------
+
+TDD--> is kind of programming format
+to understand the test the user need programming knowledge
+
+BDD
+----
+contains keywords
+
+each test step is converted to keywords
+
+keywords are like business terms
+
+BDD --> UAT(User Acceptance testing) BA perform the UAT --> BA wont have the programming knowledge so if we are using BDD then they can understand what is there in test, and they analyse the test coverage
+
+if stackholders have to check the test coverage, it is very easy for them if the test is in BDD
+
+
+To implement this BDD --> We are using a gherkin language --> gherkin is look like a normal English letters
+gherkin have some inbuild keywords aswell
+
+Given
+When
+Then
+And
+
+Scenario
+Scenarios
+Feature
+Example
+ScenarioOutline
+Background
+
+
+Gherkin is business readable language used in bdd, mainly with tools like cucumber, pytest-bdd
+specflow, it helps non technical stackholders, testers, and developers understand test scenarios in plain englsh
+
+Why Gherkin
+-----------------
+Written in plain English
+easy for business +qa+ stacholders + developers
+Act as living documentations
+Directly maps to automation code
+
+.feature --> feature file it contains gherkin keywords and bdd structured test cases
+
+Login.feature
+------------------
+
+Feature: Login Functionality
+
+	Scenario: Successful login with valid credentials
+		
+		Given user is on the login page
+
+		When user enters valid username and password
+		And clicks on login button
+
+		Then user should be redirected to the dash board
+
+
+
+Signup.feature
+--------------
+
+Feature: Signup Feature
+	
+	Scenario: Retail User Successful Signup
+		
+		Given user is on the sign up page
+		
+		When user enters pan number and dob
+		And click on signup button
+
+		Then user should redirected to the logindetails step
+		
+			
+	
+Hooks
+-----
+hooks is a set of code
+
+it will be executed before and after your scenario, step, entire test session
+
+mainly used for browser setup, teardown, logging, screen shot capture on failure, and attaching data to allure report
+
+Example: after automation test execution clearing the data from DB to make environment clean and the same data can be reused
+
+
+
+
+
+Data Tables
+-----------
+
+this is used to pass data to the test step
+
+we can create data table for each steps
+
+it will be used widely on field validation
+
+
+
+
+Robot Framework
+_____________________
+
+Nokia
+
+Easy to read plain English syntax
+open source , keyword driven test automation framework written in python. 
+it is widely used for web, api, mobile, desktop automation and fits well for both qa teams and BA
+
+Build on python and we can extend python libraries
+Supports BDD style testing
+
+rich ecosystem(selenium, Appium, api, DB, etc.)
+
+excellent HTML & log reports
+
+strong CI/CD support
+
+
+Robot Framework architecture
+------------------------------
+Test case(.robot)
+|
+|
+|
+Keywords(Built-in/library/custom python)
+|
+|
+|
+Libraries(Selenium Library, RequestsLibrary, etc.)
+|
+|
+python + automation tools
+
+
+
+Setup
+--------------
+pip install robotframework
+pip install robotframewor-selenimlibrary
+
+
+CI/CD
+--------
+
+Continues integration and Continues Delivery
+
+
+
+Jenkins--> is kind of hub --> it is integrated with multiple dev tools
+Ex: Git --> MySQL
+
+coding --> git(Pr) --> it will fetch code from --> Triggers the Unit test         --> it will deploy the code 
+                        git hub                     and it will execute the test       in to test environment
+                                                    and share the repot in mail or 
+                                                    slack
+
+
+ 
+---> fetch the automation code  --> trigger sanity automated test --> trigger full regress--> Deployed to the  
+	from git hub                                                                            UAT
+	and it will perform 
+	smoke test
+
+
+---> UAT Testing will be performed              --> deploy the code in to prod
+      Performance testing and security testing
+
+
+Devops   ---> they configure all this things
+---------
+Jenins
+----------
+Pulls your code from git
+runs your tests automatically
+generates reports
+runs on a scheduled or on every commit
+
+Install Jenkins
+--------------
+windown 10 or 11
+java Jdk 11 or 17
+internet access
+admin access
+
+Download Java 17 or 11 JDK
+---------------
+https://www.oracle.com/in/java/technologies/downloads/#license-lightbox
+install the java by double click on the exe file
+once the installation is success we have to setup environment variables
+System environment variables --> environment variables
+Click on new under system variables --> variable name as --> JAVA_HOME
+Variable Value --> c:/ProgramFiles/Java/JDK Version/
+Click on path variable --> edit --> new--> enter c:/ProgramFiles/Java/JDK Version/bin
+
+to check java is installed --> open cmd --> java -version
+
+
+To Download Jenkins
+https://www.jenkins.io/download/thank-you-downloading-windows-installer
+
+Double click msi it will get install by clicking on next
+
+once Jenkins is installed
+launch the Jenkins in browser using url: //localhost:8080
+
+you will get login page 
+
+now you need username and password
+c:/programfiles/jenkins/scretes/initialadminpassword file
+
+once you have logged in try to reset password
+
+you have install required plugins for our automation script execution
+
+
+Pipeline script
+-------------------
+
+
+pipeline{
+    
+    agent any
+    stages{
+        
+        stage('Check Python'){
+            steps{
+                bat 'python --version'
+            }
+            
+        }
+        
+        stage('Create Virtual Environment'){
+            steps{
+                bat 'python -m venv venv'
+            }
+        }
+        stage('Checkout Code'){
+            steps{
+                git 'https://github.com/sivaneshMK/Guvi_pom_Dec_2025.git'
+            }
+        }
+        
+        stage('Activate & install Dependencies'){
+            steps{
+                bat '''
+                call venv\\Scripts\\activate
+                pip install --upgrade pip
+                pip install -r requirements.txt
+                '''
+            }
+        }
+        
+        stage('Run Pytest'){
+            steps{
+                bat '''
+                call venv\\Scripts\\activate
+                pytest --env=test --html=report.html --self-contained-html'''
+            }
+        }
+    }
+        post{
+            always{
+                archiveArtifacts artifacts: 'report.html', fingerprint:true
+            }
+        }
+    }
+
+
+Project
+-------------
+have to select the framework based on the requirement
+
+POM
+Report
+Handle the test data by using an of the file system
+try to create utility functions
+setup the configuration file, set up tag based run, implement screenshot in hooks
+coftest
+
+Configure the Autorun on the particular time
+
+0 23 * * *  ---->Every day of week
+     | |________> Every Month
+     |__________> Every Day
+   ______________> Time 
+__________________> min
+
+
+
+
+
+
+
+
