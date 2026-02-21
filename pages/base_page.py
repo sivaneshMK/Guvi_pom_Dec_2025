@@ -16,6 +16,7 @@ class BasePage:
             #self.driver.find_element(locator).click()
             self.wait.until(EC.element_to_be_clickable(locator)).click()
             print(field+" is Clicked")
+            print("Clicked")
         except TimeoutException as ex:
             pytest.fail(field+ " is Not clickable")
 
